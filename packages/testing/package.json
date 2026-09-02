@@ -4,6 +4,23 @@
   "description": "Test utilities for AzTFramework applications: factories, a scriptable fetch mock, and Result assertions.",
   "type": "module",
   "license": "MIT",
+  "author": "Thomas Azarian <azarian.records.azarood@gmail.com>",
+  "homepage": "https://github.com/ThomasTrade0/AzTFramework/tree/main/packages/testing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasTrade0/AzTFramework.git",
+    "directory": "packages/testing"
+  },
+  "bugs": {
+    "url": "https://github.com/ThomasTrade0/AzTFramework/issues"
+  },
+  "keywords": [
+    "typescript",
+    "testing",
+    "test-utils",
+    "mocking",
+    "factories"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -16,11 +33,14 @@
     "dist"
   ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@azt/core": "0.1.0"
+    "@azt/core": "^0.1.0"
   }
 }

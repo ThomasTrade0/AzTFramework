@@ -23,7 +23,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "npm run typecheck -w @azt/core && npm run typecheck -w @azt/logger && npm run typecheck -w @azt/config && npm run typecheck -w @azt/validation && npm run typecheck -w @azt/events && npm run typecheck -w @azt/http && npm run typecheck -w @azt/testing && npm run typecheck -w rest-api-example && npm run typecheck -w event-driven-worker-example",
-    "clean": "npm run clean -ws --if-present && rimraf coverage"
+    "clean": "npm run clean -ws --if-present && rimraf coverage",
+    "publish:packages": "npm run build && npm publish -w @azt/core && npm publish -w @azt/logger && npm publish -w @azt/config && npm publish -w @azt/validation && npm publish -w @azt/events && npm publish -w @azt/http && npm publish -w @azt/testing"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

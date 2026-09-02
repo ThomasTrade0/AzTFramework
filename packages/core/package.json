@@ -4,6 +4,23 @@
   "description": "Foundational primitives for AzTFramework: Result type, error model, a lightweight DI container and disposable lifecycles.",
   "type": "module",
   "license": "MIT",
+  "author": "Thomas Azarian <azarian.records.azarood@gmail.com>",
+  "homepage": "https://github.com/ThomasTrade0/AzTFramework/tree/main/packages/core#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasTrade0/AzTFramework.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/ThomasTrade0/AzTFramework/issues"
+  },
+  "keywords": [
+    "typescript",
+    "result-type",
+    "error-handling",
+    "dependency-injection",
+    "toolkit"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -16,6 +33,9 @@
     "dist"
   ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit"

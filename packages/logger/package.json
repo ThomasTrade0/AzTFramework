@@ -4,6 +4,22 @@
   "description": "Structured, leveled logging with child loggers and correlation IDs.",
   "type": "module",
   "license": "MIT",
+  "author": "Thomas Azarian <azarian.records.azarood@gmail.com>",
+  "homepage": "https://github.com/ThomasTrade0/AzTFramework/tree/main/packages/logger#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasTrade0/AzTFramework.git",
+    "directory": "packages/logger"
+  },
+  "bugs": {
+    "url": "https://github.com/ThomasTrade0/AzTFramework/issues"
+  },
+  "keywords": [
+    "typescript",
+    "logger",
+    "logging",
+    "structured-logging"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -16,6 +32,9 @@
     "dist"
   ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit"
