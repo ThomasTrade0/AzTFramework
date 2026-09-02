@@ -68,7 +68,7 @@ can be adopted standalone.
 
 ## Tech stack
 
-TypeScript (strict mode) · Node.js ≥ 18 · Zod · npm workspaces · tsup (build)
+TypeScript (strict mode) · Node.js ≥ 20 · Zod · npm workspaces · tsup (build)
 · Vitest (tests) · ESLint (flat config) + Prettier · GitHub Actions (CI)
 
 ## Package structure
@@ -175,7 +175,7 @@ npm run test:watch    # watch mode
 npm run coverage       # with coverage report
 ```
 
-85+ tests across every package and example, run in CI on Node 18/20/22.
+85+ tests across every package and example, run in CI on Node 20/22/24.
 
 ## Development
 
