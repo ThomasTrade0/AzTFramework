@@ -25,6 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Packages consume each other via node_modules -> dist/index.d.ts (not
+      # source path-mapping), so lint/typecheck need a build first.
+      - name: Build packages
+        run: npm run build
+
       - name: Lint
         run: npm run lint
 
@@ -36,9 +41,6 @@ jobs:
 
       - name: Test
         run: npm run coverage
-
-      - name: Build packages
-        run: npm run build
 
       - name: Build examples
         run: npm run build:examples

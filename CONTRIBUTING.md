@@ -24,13 +24,16 @@ npm test
 1. Create a branch off `main`.
 2. Make your change. If you're touching a package's public API, add or update
    tests in that package's `tests/` directory.
-3. Run the full check suite before opening a PR:
+3. Run the full check suite before opening a PR. Build the packages first —
+   `@azt/*` packages resolve each other through `node_modules` →
+   `dist/index.d.ts`, not source path-mapping, so lint and typecheck need a
+   build to see accurate cross-package types:
 
    ```bash
+   npm run build
    npm run lint
    npm run typecheck
    npm test
-   npm run build
    npm run build:examples
    ```
 
