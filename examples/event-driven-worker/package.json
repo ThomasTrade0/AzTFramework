@@ -1,0 +1,22 @@
+{
+  "name": "event-driven-worker-example",
+  "private": true,
+  "version": "0.1.0",
+  "description": "An in-memory job queue + worker driven by @azt/events, demonstrating retries, concurrency and graceful shutdown.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azt/core": "0.1.0",
+    "@azt/events": "0.1.0",
+    "@azt/logger": "0.1.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

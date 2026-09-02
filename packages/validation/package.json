@@ -1,0 +1,27 @@
+{
+  "name": "@azt/validation",
+  "version": "0.1.0",
+  "description": "Result-typed validation helpers built on top of Zod schemas.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azt/core": "0.1.0",
+    "zod": "^3.24.1"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@azt/http",
+  "version": "0.1.0",
+  "description": "A typed fetch-based HTTP client with retries/timeouts, and a minimal Node HTTP router for building small APIs.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azt/core": "0.1.0"
+  }
+}

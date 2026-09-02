@@ -1,0 +1,26 @@
+{
+  "name": "@azt/testing",
+  "version": "0.1.0",
+  "description": "Test utilities for AzTFramework applications: factories, a scriptable fetch mock, and Result assertions.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azt/core": "0.1.0"
+  }
+}

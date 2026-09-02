@@ -1,0 +1,40 @@
+{
+  "name": "aztframework",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A production-oriented TypeScript toolkit for building modular SaaS applications, APIs, automation systems and AI-powered products.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Thomas Azarian",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @azt/core && npm run build -w @azt/logger && npm run build -w @azt/config && npm run build -w @azt/validation && npm run build -w @azt/events && npm run build -w @azt/http && npm run build -w @azt/testing",
+    "build:examples": "npm run build -w rest-api-example && npm run build -w event-driven-worker-example",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "npm run typecheck -w @azt/core && npm run typecheck -w @azt/logger && npm run typecheck -w @azt/config && npm run typecheck -w @azt/validation && npm run typecheck -w @azt/events && npm run typecheck -w @azt/http && npm run typecheck -w @azt/testing && npm run typecheck -w rest-api-example && npm run typecheck -w event-driven-worker-example",
+    "clean": "npm run clean -ws --if-present && rimraf coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^4.1.11"
+  }
+}

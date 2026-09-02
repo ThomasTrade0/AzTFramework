@@ -1,0 +1,25 @@
+{
+  "name": "rest-api-example",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A small task-management REST API built on @azt/http, @azt/config, @azt/logger, @azt/validation and @azt/events.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azt/core": "0.1.0",
+    "@azt/config": "0.1.0",
+    "@azt/events": "0.1.0",
+    "@azt/http": "0.1.0",
+    "@azt/logger": "0.1.0",
+    "@azt/validation": "0.1.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
