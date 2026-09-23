@@ -17,6 +17,6 @@
     "@azt/logger": "0.1.0"
   },
   "devDependencies": {
-    "tsx": "^4.19.2"
+    "tsx": "^4.23.14"
   }
 }
